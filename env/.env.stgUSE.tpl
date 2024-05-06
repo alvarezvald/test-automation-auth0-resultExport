@@ -1,0 +1,2 @@
+#Can create a file with: op inject -i ./env/.env.stgUSE.tpl -o ./env/.env.stgUSE
+#Can then set it as the selected environment with $env:test_env='stgUSE' (only sets the environment in that terminal instance)

@@ -1,0 +1,15 @@
+{
+  "urlValdHubLogin": "https://hub-release-candidate.valdperformance.com/app",
+  "urlTeleHabLogin": "https://client.telehab.io/app",
+  "organisationPerformance": "QA Automation Performance",
+  "organisationHealth": "QA Automation Health",
+  "organisationEmpty": "QA Automation Empty State",  
+  "teleHabProgramPerformDataFile": "@dataGenerationFiles/teleHab-Program-Perform.json",
+  "teleHabPROM_ResultTestingDataFile": "@dataGenerationFiles/teleHab-PROM-ResultTestingData.json",
+  "teleHabPROM_ProfileTileTestingDataFile": "@dataGenerationFiles/teleHab-PROM-ProfileTileTestingData.json",
+  "profileOverviewFile": "@dataFiles/profile-overview-production.json",
+  "dataResidencyProfileOverviewAue": "@dataFiles/data-residency-profile-overview-aue-production.json",
+  "dataResidencyProfileOverviewUse": "@dataFiles/data-residency-profile-overview-use-production.json",
+  "dataResidencyProfileOverviewEuw": "@dataFiles/data-residency-profile-overview-euw-production.json",
+  "dataResidencyCDN": "https://cdn-eng.prd.vald.com/config.json"
+}

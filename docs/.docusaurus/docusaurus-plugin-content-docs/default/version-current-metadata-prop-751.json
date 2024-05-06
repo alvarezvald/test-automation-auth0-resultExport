@@ -1,0 +1,89 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "category",
+        "label": "Introduction",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "category",
+            "label": "playwright",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "Configuration",
+                "href": "/docs/wiki/playwright/configure",
+                "docId": "wiki/playwright/configure",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "Running Playwright",
+                "href": "/docs/wiki/playwright/running",
+                "docId": "wiki/playwright/running",
+                "unlisted": false
+              }
+            ]
+          }
+        ],
+        "href": "/docs/wiki/"
+      }
+    ],
+    "wiki": [
+      {
+        "type": "category",
+        "label": "Playwright",
+        "items": [
+          {
+            "type": "link",
+            "label": "Configuration",
+            "href": "/docs/wiki/playwright/configure",
+            "docId": "wiki/playwright/configure",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Running Playwright",
+            "href": "/docs/wiki/playwright/running",
+            "docId": "wiki/playwright/running",
+            "unlisted": false
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      }
+    ]
+  },
+  "docs": {
+    "wiki/index": {
+      "id": "wiki/index",
+      "title": "Welcome to test automation wiki!",
+      "description": "",
+      "sidebar": "wiki"
+    },
+    "wiki/playwright/configure": {
+      "id": "wiki/playwright/configure",
+      "title": "Configuration",
+      "description": "",
+      "sidebar": "wiki"
+    },
+    "wiki/playwright/running": {
+      "id": "wiki/playwright/running",
+      "title": "Running Playwright",
+      "description": "",
+      "sidebar": "wiki"
+    }
+  }
+}

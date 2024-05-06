@@ -1,0 +1,20 @@
+{
+  "id": "wiki/playwright/running",
+  "title": "Running Playwright",
+  "description": "",
+  "source": "@site/docs/wiki/playwright/running.mdx",
+  "sourceDirName": "wiki/playwright",
+  "slug": "/wiki/playwright/running",
+  "permalink": "/docs/wiki/playwright/running",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/wiki/playwright/running.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "wiki",
+  "previous": {
+    "title": "Configuration",
+    "permalink": "/docs/wiki/playwright/configure"
+  }
+}

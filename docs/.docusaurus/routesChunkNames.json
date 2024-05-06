@@ -1,0 +1,77 @@
+{
+  "/__docusaurus/debug-98d": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-4-dc-e1c"
+    }
+  },
+  "/__docusaurus/debug/config-58c": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-4-dc-e1c"
+    }
+  },
+  "/__docusaurus/debug/content-0c0": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-4-dc-e1c"
+    },
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-e90": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-4-dc-e1c"
+    }
+  },
+  "/__docusaurus/debug/metadata-0f6": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-4-dc-e1c"
+    }
+  },
+  "/__docusaurus/debug/registry-53d": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-4-dc-e1c"
+    }
+  },
+  "/__docusaurus/debug/routes-bf2": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-4-dc-e1c"
+    }
+  },
+  "/docs-635": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---docsf-56-f76"
+    }
+  },
+  "/docs-9fd": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "version": "version---docs-935-398"
+  },
+  "/docs-637": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/wiki/-407": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-wiki-bd-8-279"
+  },
+  "/docs/wiki/playwright/configure-90d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-wiki-playwright-configure-588-da3"
+  },
+  "/docs/wiki/playwright/running-ace": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-wiki-playwright-running-137-21c"
+  },
+  "/-346": {
+    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
+    "__context": {
+      "plugin": "plugin---markdown-page-54-a-6e9"
+    },
+    "config": "config---5-e-9-4f3"
+  }
+}

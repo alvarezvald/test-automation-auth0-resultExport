@@ -1,0 +1,15 @@
+{
+  "urlValdHubLogin": "https://hub-ci1.valdperformance.com/app",
+  "urlTeleHabLogin": "https://client-ci1.telehab.io/app",
+  "organisationPerformance": "QA Automation Performance",
+  "organisationHealth": "QA Automation Health",
+  "organisationEmpty": "QA Automation Empty State",
+  "teleHabProgramPerformDataFile": "@dataGenerationFiles/teleHab-Program-Perform-staging.json",
+  "teleHabPROMAssignFile": "@dataGenerationFiles/teleHab-PROM-Assign.json",
+  "teleHabPROMCompleteFile": "@dataGenerationFiles/teleHab-PROM-Complete.json",
+  "profileOverviewFile": "@dataFiles/profile-overview-staging.json",
+  "dataResidencyProfileOverviewAue": "@dataFiles/data-residency-profile-overview-aue-staging.json",
+  "dataResidencyProfileOverviewUse": "@dataFiles/data-residency-profile-overview-use-staging.json",
+  "dataResidencyProfileOverviewEuw": "@dataFiles/data-residency-profile-overview-euw-staging.json",
+  "dataResidencyCDN": "https://cdn-eng.ci1.vald.com/config.json"
+}

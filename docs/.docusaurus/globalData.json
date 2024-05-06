@@ -1,0 +1,49 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "wiki/index",
+          "docs": [
+            {
+              "id": "wiki/index",
+              "path": "/docs/wiki/",
+              "sidebar": "wiki"
+            },
+            {
+              "id": "wiki/playwright/configure",
+              "path": "/docs/wiki/playwright/configure",
+              "sidebar": "wiki"
+            },
+            {
+              "id": "wiki/playwright/running",
+              "path": "/docs/wiki/playwright/running",
+              "sidebar": "wiki"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/wiki/",
+                "label": "Introduction"
+              }
+            },
+            "wiki": {
+              "link": {
+                "path": "/docs/wiki/playwright/configure",
+                "label": "wiki/playwright/configure"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "wiki/index",
+  "title": "Welcome to test automation wiki!",
+  "description": "",
+  "source": "@site/docs/wiki/index.mdx",
+  "sourceDirName": "wiki",
+  "slug": "/wiki/",
+  "permalink": "/docs/wiki/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/wiki/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Introduction",
+    "displayed_sidebar": "wiki"
+  },
+  "sidebar": "wiki"
+}

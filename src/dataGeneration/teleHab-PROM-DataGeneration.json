@@ -1,0 +1,442 @@
+[
+  {
+    "PROM": "HAGOS",
+    "tests": [
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+hagos-first@vald-staff.com",
+        "Answer": "first",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "0"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+hagos-last@vald-staff.com",
+        "Answer": "last",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "100"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+hagos-three@vald-staff.com",
+        "Answer": "3",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "50"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+hagos-increase@vald-staff.com",
+        "Answer": "increase",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+hagos-decrease@vald-staff.com",
+        "Answer": "decrease",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "QA PROMS Automation",
+        "Username": "qa+hagos-random@vald-staff.com",
+        "NumberOfSurveys": "3",
+        "Answer": "random"
+      }
+    ]
+  },
+  {
+    "PROM": "ASES",
+    "tests": [
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+ases-first@vald-staff.com",
+        "Answer": "first",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "50"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+ases-last@vald-staff.com",
+        "Answer": "last",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "50"
+      },     
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+ases-three@vald-staff.com",
+        "Answer": "3",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "73"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+ases-increase@vald-staff.com",
+        "Answer": "increase",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+ases-decrease@vald-staff.com",
+        "Answer": "decrease",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "QA PROMS Automation",
+        "Username": "qa+ases-random@vald-staff.com",
+        "NumberOfSurveys": "3",
+        "Answer": "random"
+      }
+    ]
+  },
+  {
+    "PROM": "FAOS",
+    "tests": [
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+faos-first@vald-staff.com",
+        "Answer": "first",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "0"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+faos-last@vald-staff.com",
+        "Answer": "last",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "100"
+      },     
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+faos-three@vald-staff.com",
+        "Answer": "3",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "50"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+faos-increase@vald-staff.com",
+        "Answer": "increase",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+faos-decrease@vald-staff.com",
+        "Answer": "decrease",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "QA PROMS Automation",
+        "Username": "qa+faos-random@vald-staff.com",
+        "NumberOfSurveys": "3",
+        "Answer": "random"
+      }
+    ]
+  },
+  {
+    "PROM": "KOOS",
+    "tests": [
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+koos-first@vald-staff.com",
+        "Answer": "first",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "0"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+koos-last@vald-staff.com",
+        "NumberOfSurveys": "3",
+        "Answer": "last",
+        "ExpectedScore": "100"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+koos-three@vald-staff.com",
+        "Answer": "3",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "50"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+koos-increase@vald-staff.com",
+        "Answer": "increase",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+koos-decrease@vald-staff.com",
+        "Answer": "decrease",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "QA PROMS Automation",
+        "Username": "qa+koos-random@vald-staff.com",
+        "NumberOfSurveys": "3",
+        "Answer": "random"
+      }
+    ]
+  },
+  {
+    "PROM": "NOOS",
+    "tests": [
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+noos-first@vald-staff.com",
+        "Answer": "first",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "0"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+noos-last@vald-staff.com",
+        "Answer": "last",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "100"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+noos-three@vald-staff.com",
+        "Answer": "3",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "50"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+noos-increase@vald-staff.com",
+        "Answer": "increase",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+noos-decrease@vald-staff.com",
+        "Answer": "decrease",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "QA PROMS Automation",
+        "Username": "qa+noos-random@vald-staff.com",
+        "NumberOfSurveys": "3",
+        "Answer": "random"
+      }
+    ]
+  },
+  {
+    "PROM": "OMPSQ",
+    "tests": [
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+ompsq-first@vald-staff.com",
+        "Answer": "first",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "70"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+ompsq-last@vald-staff.com",
+        "Answer": "last",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "31"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+ompsq-three@vald-staff.com",
+        "Answer": "3",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "39"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+ompsq-increase@vald-staff.com",
+        "Answer": "increase",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+ompsq-decrease@vald-staff.com",
+        "Answer": "decrease",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "QA PROMS Automation",
+        "Username": "qa+ompsq-random@vald-staff.com",
+        "NumberOfSurveys": "3",
+        "Answer": "random"
+      }
+    ]
+  },
+  {
+    "PROM": "QBPDS",
+    "tests": [
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+qbpds-first@vald-staff.com",
+        "Answer": "first",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "0"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+qbpds-last@vald-staff.com",
+        "Answer": "last",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "100"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+qbpds-three@vald-staff.com",
+        "Answer": "3",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "40"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+qbpds-increase@vald-staff.com",
+        "Answer": "increase",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+qbpds-decrease@vald-staff.com",
+        "Answer": "decrease",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "QA PROMS Automation",
+        "Username": "qa+qbpds-random@vald-staff.com",
+        "NumberOfSurveys": "3",
+        "Answer": "random"
+      }
+    ]
+  },
+  {
+    "PROM": "NPS",
+    "tests": [
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+nps-first@vald-staff.com",
+        "NumberOfSurveys": "3",
+        "Answer": "first",
+        "ExpectedScore": "100"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+nps-last@vald-staff.com",
+        "Answer": "last",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "0"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+nps-three@vald-staff.com",
+        "Answer": "3",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "20"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+nps-increase@vald-staff.com",
+        "Answer": "increase",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+nps-decrease@vald-staff.com",
+        "Answer": "decrease",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "QA PROMS Automation",
+        "Username": "qa+nps-random@vald-staff.com",
+        "NumberOfSurveys": "3",
+        "Answer": "random"
+      }
+    ]
+  },
+  {
+    "PROM": "IKDC",
+    "tests": [
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+ikdc-first@vald-staff.com",
+        "Answer": "first",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "11"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+ikdc-last@vald-staff.com",
+        "Answer": "last",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "100"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+ikdc-three@vald-staff.com",
+        "Answer": "3",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "54"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+ikdc-increase@vald-staff.com",
+        "Answer": "increase",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+ikdc-decrease@vald-staff.com",
+        "Answer": "decrease",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "QA PROMS Automation",
+        "Username": "qa+ikdc-random@vald-staff.com",
+        "NumberOfSurveys": "3",
+        "Answer": "random"
+      }
+    ]
+  },
+  {
+    "PROM": "QuickDASH",
+    "tests": [
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+quickdash-first@vald-staff.com",
+        "Answer": "first",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "11"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+quickdash-last@vald-staff.com",
+        "Answer": "last",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "100"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+quickdash-three@vald-staff.com",
+        "Answer": "3",
+        "NumberOfSurveys": "3",
+        "ExpectedScore": "54"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+quickdash-increase@vald-staff.com",
+        "Answer": "increase",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "SURVEY SCORE CHECK",
+        "Username": "qa+quickdash-decrease@vald-staff.com",
+        "Answer": "decrease",
+        "NumberOfSurveys": "7"
+      },
+      {
+        "Comment": "QA PROMS Automation",
+        "Username": "qa+quickdash-random@vald-staff.com",
+        "NumberOfSurveys": "3",
+        "Answer": "random"
+      }
+    ]
+  }
+]

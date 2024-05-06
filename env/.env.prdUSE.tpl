@@ -1,0 +1,2 @@
+#Can create a file with: op inject -i ./env/.env.prdUSE.tpl -o ./env/.env.prdUSE
+#Can then set it as the selected environment with $env:test_env='prdUSE' (only sets the environment in that terminal instance)

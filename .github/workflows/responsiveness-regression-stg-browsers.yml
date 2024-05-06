@@ -1,0 +1,71 @@
+name: Responsiveness Regression Browser Tests
+run-name: Run Playwright tests - Responsiveness - ${{inputs.BROWSER_FOR_TEST}}
+on:
+  workflow_dispatch:
+    inputs:
+        BROWSER_FOR_TEST:
+          description: 'Browser for test run'
+          required: true
+          default: 'chromium'
+          type: choice
+          options:
+            - chromium
+            - chromium-regular
+            - chromium-tablet
+            - firefox
+            - webkit
+
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    env:
+      vald_environment: staging
+    
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 20
+
+    - name: Configure 1Password Service Account
+      uses: 1password/load-secrets-action/configure@v1
+      with:
+        service-account-token: ${{secrets.ONEPASSWORD_SERVICE_ACCOUNT}}
+        
+    - name: Load Secrets into env file
+      uses: 1password/load-secrets-action@v1
+      with:
+      # Export loaded secrets as environment variables
+        export-env: true
+      env:
+        USER_VALDAUTOMATION : "op://QA Automation/VALD Automation/username"
+        PASS_VALDAUTOMATION : "op://QA Automation/VALD Automation/password"
+
+    - name: Install dependencies
+      run: npm ci
+
+    # Install relevant browser for test
+    - name: Install Playwright with Chromium Browser
+      if: ${{contains(inputs.BROWSER_FOR_TEST, 'chromium')}}
+      run: npx playwright install --with-deps chromium
+
+    - name: Install Playwright with Webkit Browser
+      if: ${{contains(inputs.BROWSER_FOR_TEST, 'webkit')}}
+      run: npx playwright install --with-deps webkit
+
+    - name: Install Playwright with Firefox Browser
+      if: ${{contains(inputs.BROWSER_FOR_TEST, 'firefox')}}
+      run: npx playwright install --with-deps firefox
+
+    - name: Run Playwright tests - Responsiveness - ${{inputs.BROWSER_FOR_TEST}}
+      run: npx playwright test --grep "(?=.*@regression)(?=.*@responsiveness)" --project=${{inputs.BROWSER_FOR_TEST}} --workers 1
+
+    - uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: playwright-report-and-screenshots
+        path: |
+            playwright-report/
+            screenshots/
+        retention-days: 14

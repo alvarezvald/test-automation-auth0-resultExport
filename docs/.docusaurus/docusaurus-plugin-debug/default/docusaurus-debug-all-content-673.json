@@ -1,0 +1,160 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/docs",
+          "tagsPath": "/docs/tags",
+          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs",
+          "editUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/lisaksson/work-2/test-automation/docs/sidebars.ts",
+          "contentPath": "/Users/lisaksson/work-2/test-automation/docs/docs",
+          "contentPathLocalized": "/Users/lisaksson/work-2/test-automation/docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "docs": [
+            {
+              "id": "wiki/index",
+              "title": "Welcome to test automation wiki!",
+              "description": "",
+              "source": "@site/docs/wiki/index.mdx",
+              "sourceDirName": "wiki",
+              "slug": "/wiki/",
+              "permalink": "/docs/wiki/",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/wiki/index.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "sidebar_label": "Introduction",
+                "displayed_sidebar": "wiki"
+              },
+              "sidebar": "wiki"
+            },
+            {
+              "id": "wiki/playwright/configure",
+              "title": "Configuration",
+              "description": "",
+              "source": "@site/docs/wiki/playwright/configure.mdx",
+              "sourceDirName": "wiki/playwright",
+              "slug": "/wiki/playwright/configure",
+              "permalink": "/docs/wiki/playwright/configure",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/wiki/playwright/configure.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "wiki",
+              "next": {
+                "title": "Running Playwright",
+                "permalink": "/docs/wiki/playwright/running"
+              }
+            },
+            {
+              "id": "wiki/playwright/running",
+              "title": "Running Playwright",
+              "description": "",
+              "source": "@site/docs/wiki/playwright/running.mdx",
+              "sourceDirName": "wiki/playwright",
+              "slug": "/wiki/playwright/running",
+              "permalink": "/docs/wiki/playwright/running",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/wiki/playwright/running.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "wiki",
+              "previous": {
+                "title": "Configuration",
+                "permalink": "/docs/wiki/playwright/configure"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "category",
+                "label": "Introduction",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "playwright",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "wiki/playwright/configure"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "wiki/playwright/running"
+                      }
+                    ]
+                  }
+                ],
+                "link": {
+                  "type": "doc",
+                  "id": "wiki/index"
+                }
+              }
+            ],
+            "wiki": [
+              {
+                "type": "category",
+                "label": "Playwright",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "wiki/playwright/configure"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "wiki/playwright/running"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": "/blog/tags",
+      "blogTagsPaginated": []
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.tsx"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}

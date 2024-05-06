@@ -1,0 +1,262 @@
+name: PROMs Data Generation Tests (staging only)
+run-name: PROMs Data Generation Tests (staging only)
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    env:
+      vald_environment: staging
+      TEST_RESULTS: ""
+    
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 20
+
+    - name: Configure 1Password Service Account
+      uses: 1password/load-secrets-action/configure@v1
+      with:
+        service-account-token: ${{secrets.ONEPASSWORD_SERVICE_ACCOUNT}}
+        
+    - name: Load Secrets into env file
+      uses: 1password/load-secrets-action@v1
+      with:
+      # Export loaded secrets as environment variables
+        export-env: true
+      env:
+        USER_PROMS : "op://QA Automation/Automation PROMS/username"
+        PASS_PROMS : "op://QA Automation/Automation PROMS/password"
+
+    - name: Install dependencies
+      run: npm ci
+
+    # Install chromium browser
+    - name: Install Playwright with Chromium Browser
+      run: npx playwright install --with-deps chromium
+
+    # PROM Data Generation 
+    #
+    # NOTE: Currently staging only
+    #
+    # NOTE: Due the volume of tests and the use of these for data generation, 'continue-on-error: true' is used to continue running the tests
+    # even if one of the tests fails as a fail in one might not affect the others. However, this means we have to track errors ourselves
+    # through GITHUB_ENV and then check at the end in the 'Detect failed tests' step and fail as required indicating the tests that failed.
+    # The Playwright report for those tests will contain detailed fail information.
+    #
+
+###
+### PROMS RESULTS TESTS
+###
+    - name: Make the script files executable
+      run: |
+            chmod +x ./scripts/playwright/PROM_results_tests.sh &&
+            chmod +x ./scripts/playwright/PROM_profile_tile_tests.sh &&
+            chmod +x ./scripts/playwright/process_test_results.sh
+
+
+    # HAGOS
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "HAGOS"
+          PROM_ACTION: "Assign"
+      continue-on-error: true
+
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "HAGOS"
+          PROM_ACTION: "Complete"
+      continue-on-error: true
+
+    # ASES
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "ASES"
+          PROM_ACTION: "Assign"
+      continue-on-error: true
+
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "ASES"
+          PROM_ACTION: "Complete"
+      continue-on-error: true
+
+    # FAOS
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "FAOS"
+          PROM_ACTION: "Assign"
+      continue-on-error: true
+
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "FAOS"
+          PROM_ACTION: "Complete"
+      continue-on-error: true
+
+    # KOOS
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "KOOS"
+          PROM_ACTION: "Assign"
+      continue-on-error: true
+
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "KOOS"
+          PROM_ACTION: "Complete"
+      continue-on-error: true
+
+
+    # NOOS
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "NOOS"
+          PROM_ACTION: "Assign"
+      continue-on-error: true
+
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "NOOS"
+          PROM_ACTION: "Complete"
+      continue-on-error: true
+
+
+    # OMPSQ
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "OMPSQ"
+          PROM_ACTION: "Assign"
+      continue-on-error: true
+
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "OMPSQ"
+          PROM_ACTION: "Complete"
+      continue-on-error: true
+
+    #  QBPDS
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "QBPDS"
+          PROM_ACTION: "Assign"
+      continue-on-error: true
+
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "QBPDS"
+          PROM_ACTION: "Complete"
+      continue-on-error: true
+
+    # NPS
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "NPS"
+          PROM_ACTION: "Assign"
+      continue-on-error: true
+
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "NPS"
+          PROM_ACTION: "Complete"
+      continue-on-error: true
+
+    # IKDC
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "IKDC"
+          PROM_ACTION: "Assign"
+      continue-on-error: true
+
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "IKDC"
+          PROM_ACTION: "Complete"
+      continue-on-error: true
+
+    # QuickDASH
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "QuickDASH"
+          PROM_ACTION: "Assign"
+      continue-on-error: true
+
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_TYPE}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_results_tests.sh $PROM_TEST $PROM_TYPE $PROM_ACTION
+      env:
+          PROM_TEST: "proms_result_test"
+          PROM_TYPE: "QuickDASH"
+          PROM_ACTION: "Complete"
+      continue-on-error: true
+
+###
+### PROMS PROFILE TILE TESTS
+###
+
+    # ALL ASSIGNS (as there are fewer than the result tests above)
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_profile_tile_tests.sh $PROM_TEST $PROM_ACTION
+      env:
+        PROM_TEST: "proms_profile_tile_test"
+        PROM_ACTION: "Assign"
+      continue-on-error: true
+
+    - name: Run Playwright tests - ${{env.PROM_TEST}}-${{env.PROM_ACTION}}
+      run: ./scripts/playwright/PROM_profile_tile_tests.sh $PROM_TEST $PROM_ACTION
+      env:
+        PROM_TEST: "proms_profile_tile_test"
+        PROM_ACTION: "Complete"
+      continue-on-error: true
+
+    - name: Process test results
+      run: |
+            ./scripts/playwright/process_test_results.sh
+
+    - uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: playwright-report-and-screenshots
+        path: |
+            playwright-report/
+        retention-days: 30

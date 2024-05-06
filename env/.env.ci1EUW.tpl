@@ -1,0 +1,2 @@
+#Can create a file with: op inject -i ./env/.env.ci1EUW.tpl -o ./env/.env.ci1EUW
+#Can then set it as the selected environment with $env:test_env='ci1EUW' (only sets the environment in that terminal instance)

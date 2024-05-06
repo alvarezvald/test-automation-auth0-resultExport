@@ -1,0 +1,81 @@
+[
+  {
+    "PROM_TYPE": "NOOS",
+    "tests": [
+      {
+        "Comment": "QA Hub 2023 (P)",
+        "Username": "valdtestanalyst+diversedata@gmail.com",
+        "NumberOfSurveys": "1",
+        "Answer": "last"
+      }
+    ]
+  },
+  {
+    "PROM_TYPE": "FAOS",
+    "tests": [
+      {
+        "Comment": "QA Hub 2023 (P)",
+        "Username": "valdtestanalyst+faos@gmail.com",
+        "NumberOfSurveys": "3",
+        "Answer": "first"
+      }
+    ]
+  },
+  {
+    "PROM_TYPE": "KOOS",
+    "tests": [
+      {
+        "Comment": "QA Hub 2023 (P)",
+        "Username": "valdtestanalyst+koos@gmail.com",
+        "NumberOfSurveys": "3",
+        "Answer": "last"
+      }
+    ]
+  },
+  {
+    "PROM_TYPE": "HAGOS",
+    "tests": [
+      {
+        "Comment": "QA Hub 2023 (P)",
+        "Username": "valdtestanalyst+hagos@gmail.com",
+        "NumberOfSurveys": "5",
+        "Answer": "random"
+      },
+      {
+        "Comment": "QA Hub 2023 (P)",
+        "Username": "fake@email.com",
+        "NumberOfSurveys": "5",
+        "Answer": "random"
+      },
+      {
+        "Comment": "QA Hub 2023 (P)",
+        "Username": "fake1@email.com",
+        "NumberOfSurveys": "5",
+        "Answer": "random"
+      },
+      {
+        "Comment": "QA Hub 2023 (P)",
+        "Username": "fake2@email.com",
+        "NumberOfSurveys": "5",
+        "Answer": "random"
+      }
+    ]
+  },
+  {
+    "PROM_TYPE": "QBPDS",
+    "tests": [
+      {
+        "Comment": "QA Hub 2023 (P)",
+        "Username": "valdtestanalyst+empt@gmail.com",
+        "NumberOfSurveys": "5",
+        "Answer": "random"
+      },
+      {
+        "Comment": "QA Hub 2023 (P)",
+        "Username": "valdtestanalyst+empt2@gmail.com",
+        "NumberOfSurveys": "5",
+        "Answer": "random"
+      }
+    ]
+  }
+]

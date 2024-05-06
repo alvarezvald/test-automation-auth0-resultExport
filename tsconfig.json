@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "baseUrl": "./src", // This must be specified if "paths" is.
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters":true,
+    "paths": {
+      "@pageObjects/*": [
+        "pageObjects/*"
+      ], // This mapping is relative to "baseUrl".
+      "@dataGenerationFiles/*": [
+        "../src/dataGeneration/*"
+      ], // This mapping is relative to "baseUrl".
+      "@dataFiles/*": [
+        "data/*"
+      ], // This mapping is relative to "baseUrl".
+      "@configuration/*": [
+        "configuration/*"
+      ], // This mapping is relative to "baseUrl".
+      "@commonLibrary/*": [
+        "commonLibrary/*"
+      ], // This mapping is relative to "baseUrl".
+      "@apiUtils/*": [
+        "api/Utils/*"
+      ], // This mapping is relative to "baseUrl".
+      "@apiVald/*": [
+        "api/Vald/*"
+      ], // This mapping is relative to "baseUrl".
+      "@api/*": [
+        "api/*"
+      ], // This mapping is relative to "baseUrl".
+      "@dto/*": [
+        "dto/*"
+      ] // This mapping is relative to "baseUrl".
+    }
+  },
+  "exclude": ["docs"]
+}
