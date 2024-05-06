@@ -38,4 +38,11 @@ export class ReportResultsExport {
     await this.fromDate.fill(fromDate);
   }
 
+  async validateNordBordTest(system: string) {
+    await expect(this.nordBordTab).toHaveText(system);
+  }
+
+  async validateForceFrameTest(system: string) {
+    await expect(this.forceFrameTab).toHaveText(system);
+  }
 }
