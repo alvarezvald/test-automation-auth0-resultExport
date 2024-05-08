@@ -68,20 +68,4 @@ test('15.1.1 Create a leaderboard on VALD Hub @trainingprogram @regression', asy
 
     });
 
-    await test.step('Delete the program that was recently created', async () => {
-
-    });
-
-    await test.step('Validate that the recently created program was deleted', async () => {
-
-    });
-
-    await test.step('Validate that a program can be successfully edited, and then deleted', async () => {
-
-    });
-
-    await test.step('Fifth step here / validate that the program was edited and then deletes the training program', async () => {
-
-
-    });
 });
